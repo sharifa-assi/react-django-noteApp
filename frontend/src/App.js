@@ -7,13 +7,14 @@ import Note from "./pages/Note";
 function App() {
   return (
     <BrowserRouter>
-     
+    <div className="container dark">
+      <div className="app">
         <Header />
-     
         <Route path="/" exact component={NotesList} />
         <Route path="/note/:id" component={Note} />
-   
-    </BrowserRouter>
+      </div>
+    </div>
+  </BrowserRouter>
   );
 }
 
